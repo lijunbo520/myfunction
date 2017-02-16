@@ -68,7 +68,7 @@
         }
     }
 
-    //封装自己的clientWidth Height
+    //可视区域大小   
     function client() {
 				if(window.innerWidth != null)  // ie9 +  最新浏览器
 				{
