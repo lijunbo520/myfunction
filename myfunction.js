@@ -89,3 +89,15 @@
 					height: document.body.clientHeight
 				}
 			}
+
+    //获取当前属性
+    function getStyle(obj,attr) {  //  谁的      那个属性
+        if(obj.currentStyle)  // ie 等
+        {
+            return obj.currentStyle[attr];  // 返回传递过来的某个属性
+        }
+        else
+        {
+            return window.getComputedStyle(obj,null)[attr];  // w3c 浏览器
+        }
+    }
